@@ -5,155 +5,223 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/tablet.css" media="screen and (min-width : 500px)">
+    <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width : 1005px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="twitter">
-            <section class="twitter__menu">
-                <div class="menu__logo">
-                    <img src="./img/twitter_logo.svg" alt="twitter logo">
-                </div>
-                <div class="menu__search-bar">
-                    <figure>
-                        <img src="./img/search_icon.svg" alt="icon search-bar">
-                    </figure>
-                    <input type="text" placeholder="Search Twitter">
-                </div>
-                <div class="menu__more">
-                    <img src="./img/more_icon.svg" alt="icon more actions">
-                </div>
-                <div class="menu__explore">
-                    <img src="./img/hash_tag_icon.svg" alt="icon hashtag">
-                    <p>Explore</p>
-                </div>
-                <div class="menu__config">
-                    <img src="./img/configuration_settings_icon.svg" alt="icon config">
-                    <p>Settings</p>
-                </div>
-            </section>
-
-            <section class="twitter__register">
-                <div class="register__text">
-                    <p><b>Dont miss what's happening </b>People on Twitter are the first to know</p>
-                </div>
-                <div class="register__buttons">
-                    <a class="button button--login" href="">Log in</a>
-                    <a class="button button--signUp" href="">Sign Up</a>
-                </div>
-            </section>
-
-            <section class="twitter__banner">
-                <article class="banner__header">
-                    <figure class="header__arrow-back">
-                        <img src="/img/arrows_back.svg" alt="icon arrows comeback">
-                    </figure>
-                    <div class="header__text">
-                        <p>💚🚀JuanDC: Juan David Castro ⚡️👨‍💻 ⚛️</p>
-                        <sub>12.4K Tweets</sub>
-                    </div>
-                </article>
-                <figure class="banner__img">
-                    <img src="./img/banner.jpg" alt="">
+        <aside>
+            <section class="aside">
+                <figure class="aside__img">
+                    <img src="./img/twitter_logo.svg" alt="">
+                </figure>
+                <figure class="aside__img">
+                    <img src="./img/search_icon.svg" alt="">
+                </figure>
+                <figure class="aside__img">
+                    <img src="./img/configuration_settings_icon.svg" alt="">
                 </figure>
             </section>
+        </aside>
 
-            <section class="twitter__profile">
-                <article class="follow">
-                    <div class="follow__container" >
-                        <figure class="container__img">
+        <div class="content">
+                <section class="header">
+                    <article class="twitter__menu">
+                        <div class="menu__logo">
+                            <img src="./img/twitter_logo.svg" alt="twitter logo">
+                        </div>
+                        <div class="menu__search-bar">
+                            <figure>
+                                <img src="./img/search_icon.svg" alt="icon search-bar">
+                            </figure>
+                            <input type="text" placeholder="Search Twitter">
+                        </div>
+                        <div class="menu__more">
+                            <img src="./img/more_icon.svg" alt="icon more actions">
+                        </div>
+                    </article>
+                    <article class="twitter__register">
+                        <div class="register__text">
+                            <p><b>Dont miss what's happening </b>People on Twitter are the first to know</p>
+                        </div>
+                        <div class="register__buttons">
+                            <a class="button button--login" href="">Log in</a>
+                            <a class="button button--signUp" href="">Sign Up</a>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="twitter__banner">
+                    <article class="banner__header">
+                        <figure class="header__arrow-back">
+                            <img src="/img/arrows_back.svg" alt="icon arrows comeback">
+                        </figure>
+                        <div class="header__text">
+                            <p class="tittle-profile__name tittle-profile__name-header">💚🚀JuanDC: Juan David Castro ⚡️👨‍💻 ⚛️</p>
+                            <sub>12.4K Tweets</sub>
+                        </div>
+                        <div class="caja1">
+
+                        </div>
+                    </article>
+                    <figure class="banner__img">
+                        <img src="./img/banner.jpg" alt="">
+                    </figure>
+                </section>
+                <section class="twitter__profile">
+                    <article class="follow">
+                        <div class="follow__container" >
+                            <figure class="container__img">
+                                <img src="./img/Juan.jpg" alt="">
+                            </figure>
+                        </div>
+                        <button class="follow__button">Follow</button>
+                    </article>
+                    <article class="tittle-profile">
+                        <p class="tittle-profile__name">💚🚀JuanDC: Juan David Castro ⚡️👨‍💻 ⚛️</p>
+                        <p class="tittle-profile__username">
+                            @fjuandc
+                        </p>
+                    </article>
+                
+                    <article class="description-profile">
+                        <p>📚🍏 The Eternal Student</p>
+                        <p>👨‍🏫 Course Director and Teacher in
+                            <a class="link">@Platzi</a>
+                            </p>
+                        <p>✍️ Computer Science and Programming</p>
+                        <p><a class="link"href="">#NuncaParesDeAprender 💚🚀</a></p>
+                    </article>
+                    <article class="dates-profile">
+                        <p> <span class="dates-profile__icon dates-profile__icon--location"></span> Bogotá, DC, Colombia</p>
+                        <p> <span class="dates-profile__icon dates-profile__icon--ancle"></span> <a class="link" href="">platzi.com/teachers/juandc</a></p>
+                        <p> <span class="dates-profile__icon dates-profile__icon--calendar"></span> Joined May 2016</p>
+                    </article>
+                    <article class="followers">
+                        <p><b>531 </b>Following</p>
+                        <p><b>7,159 </b>Followers</p>
+                    </article>
+                </section>
+                <section class="twitter__content">
+                    <article class="social-media">
+                        <nav>
+                            <ul class="social-media__navigation">
+                                <li> <b>Tweets</b></li>
+                                <li>Tweets & replies</li>
+                                <li>Media</li>
+                                <li>Likes</li>
+                            </ul>
+                        </nav>
+                    </article>
+                </section>
+
+                <section class="twitter__posts">
+                    <article class="publications__sidebar">
+                        <img class="publications__pin-icon" src="./img/pinned_icon.svg" alt="">
+                        <figure class="publications__container-img">
                             <img src="./img/Juan.jpg" alt="">
                         </figure>
-                    </div>
-                    <button class="follow__button">Follow</button>
-                </article>
+                    </article>
 
-                <article class="tittle-profile">
-                    <p class="tittle-profile__name">💚🚀JuanDC: Juan David Castro ⚡️👨‍💻 ⚛️</p>
-                    <p class="tittle-profile__username">
-                        @fjuandc
-                    </p>
-                </article>
+                    <article class="publications__contain">
+                        <p class="pinned-tweet">Pinned Tweet</p>
+                        <div class="post__title">
+                            <p class="post__title--name">💚🚀JuanDC: Juan David Castro ⚡️👨‍💻 ⚛️</p>
+                            <p class="post__title--username">@fjuandc</p>
+                            <p class="post__title--date">·May 24</p>
+                        </div>
+                        <div class="post__text">
+                            <p>👯 Las habilidades primordiales que debes dominar para trabajar como frontend developer:
+                                <br><br>
+                                🕸 Manipulación del DOM
+                                Interactuar 🌚 íntimamente 🌝 con los usuarios 🫂
+                                <br><br>
+                                ☎️ Consumo de API REST
+                                Traducir esas interacciones en consultas al backend 🛩</p>
+                                <iframe src="https://youtu.be/fp-J81r48Yc"></iframe>
+                        </div>
                 
-                <article class="description-profile">
-                    <p>📚🍏 The Eternal Student</p>
-                    <p>👨‍🏫 Course Director and Teacher in 
-                        <a class="link">@Platzi</a>
-                        </p>
-                    <p>✍️ Computer Science and Programming</p>
-                    <p><a class="link"href="">#NuncaParesDeAprender 💚🚀</a></p>                    
-                </article>
-
-                <article class="dates-profile">
-                    <p> <span class="dates-profile__icon dates-profile__icon--location"></span> Bogotá, DC, Colombia</p>
-
-                    <p> <span class="dates-profile__icon dates-profile__icon--ancle"></span> <a class="link" href="">platzi.com/teachers/juandc</a></p>
-
-                    <p> <span class="dates-profile__icon dates-profile__icon--calendar"></span> Joined May 2016</p>
-                </article>
-
-                <article class="followers">
-                    <p><b>531 </b>Following</p>
-                    <p><b>7,159 </b>Followers</p>
-                </article>
-            </section>
-
-            <section class="twitter__content">
-                <article class="social-media">
-                    <nav>
-                        <ul class="social-media__navigation">
-                            <li>Tweets</li>
-                            <li>Tweets & replies</li>
-                            <li>Media</li>
-                            <li>Likes</li>
-                        </ul>
-                    </nav>
-                </article>
-            </section>
-
-            <section class="twitter__posts">
-                <article class="publications__sidebar">
-                    <img class="publications__pin-icon" src="./img/pinned_icon.svg" alt="">
-                    <figure class="publications__container-img">
-                        <img src="./img/Juan.jpg" alt="">
-                    </figure>
-                </article>
-
-                <article class="publications__contain">
-                    <p class="pinned-tweet">Pinned Tweet</p>
-                    <div class="post__title">
-                        <p class="post__title--name">💚🚀JuanDC:</p>
-                        <p class="post__title--username">@fjuandc ·May 24</p>
-                    </div>
-                    <div class="post__text">
-                        <p>👯 Las habilidades primordiales que debes dominar para trabajar como frontend developer:
-                            <br><br>
-                            🕸 Manipulación del DOM
-                            Interactuar 🌚 íntimamente 🌝 con los usuarios 🫂
-                            <br><br>
-                            ☎️ Consumo de API REST
-                            Traducir esas interacciones en consultas al backend 🛩</p>
-                            <iframe src="https://youtu.be/fp-J81r48Yc"></iframe>
-                    </div>
-                    
-                    <div class="post__icons">
-    
-                    </div>
-                    <div class="post__subtext">
-                        
-                    </div>
-                </article>
-            </section>
+                        <div class="post__icons">
+                            <ul class="icons__bar">
+                                <li class="bar__item">
+                                    <span><img class="bar__img" src="./img/comment_icon.svg" alt=""></span>12
+                                </li>
+                                <li class="bar__item">
+                                    <span><img class="bar__img" src="./img/retweet_share_twitter_redo_icon.svg" alt=""></span>49
+                                </li>
+                                <li class="bar__item">
+                                    <span><img class="bar__img" src="./img/heart_icon.svg" alt=""></span>250
+                                </li>
+                                <li class="bar__item">
+                                    <span><img class="bar__img" src="./img/share_icon.svg" alt=""></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="post__subtext">
                 
-            <section class="twitter__recommended"></section>
+                        </div>
+                    </article>
+                </section>
 
-            
+                <section class="twitter__posts">
+                    <article class="publications__sidebar">
+                        <img class="publications__pin-icon" src="./img/pinned_icon.svg" alt="">
+                        <figure class="publications__container-img">
+                            <img src="./img/Juan.jpg" alt="">
+                        </figure>
+                    </article>
+                    <article class="publications__contain">
+                        <p class="pinned-tweet">Pinned Tweet</p>
+                        <div class="post__title">
+                            <p class="post__title--name">💚🚀JuanDC:</p>
+                            <p class="post__title--username">@fjuandc ·May 24</p>
+                        </div>
+                        <div class="post__text">
+                            <p>👯 Las habilidades primordiales que debes dominar para trabajar como frontend developer:
+                                <br><br>
+                                🕸 Manipulación del DOM
+                                Interactuar 🌚 íntimamente 🌝 con los usuarios 🫂
+                                <br><br>
+                                ☎️ Consumo de API REST
+                                Traducir esas interacciones en consultas al backend 🛩</p>
+                                <iframe src="https://youtu.be/fp-J81r48Yc"></iframe>
+                        </div>
+                
+                        <div class="post__icons">
+                            <ul class="icons__bar">
+                                <li class="bar__item">
+                                    <span><img class="bar__img" src="./img/comment_icon.svg" alt=""></span>12
+                                </li>
+                                <li class="bar__item">
+                                    <span><img class="bar__img" src="./img/retweet_share_twitter_redo_icon.svg" alt=""></span>49
+                                </li>
+                                <li class="bar__item">
+                                    <span><img class="bar__img" src="./img/heart_icon.svg" alt=""></span>250
+                                </li>
+                                <li class="bar__item">
+                                    <span><img class="bar__img" src="./img/share_icon.svg" alt=""></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+        </div>
+        <section class="twitter__recommended"></section>
     </main>
-    
     <footer>
-
+            <div class="footer__text">
+                <p class="footer__p1">Don’t miss what’s happening</p>
+                <p class="footer__p2">People on Twitter are the first to know.</p>
+            </div>
+                
+            <div class="register__buttons register__buttons--footer">
+                <a class="button button--login button button__footer--login" href="">Log in</a>
+                <a class="button button--signUp button__footer--signUp" href="">Sign Up</a>
+            </div>
     </footer>
 </body>
 </html>

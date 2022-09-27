@@ -21,6 +21,16 @@ a{
 li{
     list-style: none;
 }
+aside{
+    display: none;
+}
+.header{
+    position: sticky;
+    top: -1px;
+    box-shadow: 0px 0px 25px #fff;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+}
 /* Seccion de twitter menu */
 .twitter__menu{
     width: 100%;
@@ -80,7 +90,8 @@ input{
 .twitter__register{
     width: 95%;
     align-items: center;
-    margin: 10px auto 12px;
+    margin: 0 auto;
+    padding: 10px 0 12px;
 }
 .register__buttons{
     display: flex;
@@ -242,6 +253,8 @@ nav{
     padding-right: 28px;
 }
 .twitter__posts{
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     border-top: solid var(--gray-main) 1px;
     padding: 10px 0;
@@ -262,7 +275,7 @@ nav{
     height: 55px;
 }
 .publications__container-img > img{
-    width: 100%;
+    width:100%;
     height: 100%;
     object-fit: contain;
     border-radius: 100%;
@@ -270,7 +283,7 @@ nav{
 .publications__contain{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    min-width: 240px;
     padding: 0 12px;
 }
 .pinned-tweet{
@@ -284,12 +297,23 @@ nav{
     align-items: center;
 }
 .post__title--name{
-    width: 60%;
+    width: 58%;
     font-weight: bold;
     font-size: 1.35rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .post__title--username{
-    width: 40%;
+    width: 10%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.post__title--date{
+    width: 32%;
+    font-size: 1.3rem;
+    color: #536471;
 }
 .post__text{
     padding:5px 10px 0 0;
@@ -300,4 +324,31 @@ iframe{
     height: 250px;
     margin-top: 10px;
     border-radius: 20px;
+}
+.post__icons{
+    margin-top: 16px;
+    font-size: 1.2rem;
+}
+.icons__bar{
+    display: flex;
+    justify-content: space-between;
+}
+.bar__item{
+    min-width: 30px;
+    min-height: 15px;
+}
+.bar__item span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+.bar__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.twitter__recommended{
+    display: none;
 }
