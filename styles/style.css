@@ -216,15 +216,15 @@ input{
     vertical-align: middle;
 }
 .dates-profile__icon--location{
-    background-image: url(./img/location_16px.png);
+    background-image: url(../img/location_16px.png);
 }
 .dates-profile .dates-profile__icon--ancle{
-    background-image: url(./img/link_26px.png);
+    background-image: url(../img/link_26px.png);
     width: 14px;
     height: 14px;
 }
 .dates-profile__icon--calendar{
-    background-image: url(./img/calendar_24px.png);
+    background-image: url(../img/calendar_24px.png);
 }
 .followers{
     font-size: 1.2rem;
