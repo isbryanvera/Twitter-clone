@@ -187,9 +187,6 @@ aside{
     .aside__img{
        margin-right: 20px;
     }
-    .aside__text > p{
-        
-    }
     .aside__img--explore > p{
         display:flex;
     }

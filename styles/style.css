@@ -351,3 +351,8 @@ iframe{
 .twitter__recommended{
     display: none;
 }
+@media (min-width: 376px){
+    nav{
+        overflow-x: hidden;
+    }
+}
