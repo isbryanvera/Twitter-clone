@@ -24,6 +24,11 @@ li{
 aside{
     display: none;
 }
+.nombre-overflow{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 .header{
     position: sticky;
     top: -1px;
@@ -300,15 +305,9 @@ nav{
     width: 58%;
     font-weight: bold;
     font-size: 1.35rem;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
 }
 .post__title--username{
     width: 10%;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
 }
 .post__title--date{
     width: 32%;
